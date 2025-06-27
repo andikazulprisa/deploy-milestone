@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+Ahom&family=Outfit:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+Ahom&family=Outfit:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -65,7 +63,7 @@ a:hover {
 }
 
 .logo:hover {
-  cursor:default
+  cursor: default;
 }
 
 #hamburger-nav {
@@ -209,7 +207,10 @@ section {
   animation-delay: 0.4s;
 }
 
-.section__text__p1, .title, .section__text__p2, .btn-container {
+.section__text__p1,
+.title,
+.section__text__p2,
+.btn-container {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeSlide 1.5s ease-out forwards;
@@ -390,7 +391,7 @@ article .icon {
   grid-auto-flow: dense;
 }
 
-.foto img{
+.foto img {
   transition: 1s;
   cursor: pointer;
 }
@@ -398,7 +399,6 @@ article .icon {
 .foto img:hover {
   transform: scale(1.1);
 }
-
 
 #contact {
   display: flex;
@@ -496,4 +496,44 @@ footer p {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: fit-content;
+  padding-bottom: 4rem;
+}
+
+.project-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-image img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-details {
+  max-width: 600px;
+}
+
+.project-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
 }
